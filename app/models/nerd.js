@@ -1,9 +1,8 @@
 // grab the mongoose module
-
 var mongoose = require('mongoose');
 
 // Creating the schema
-var nerdSchema = mongoose.schema(
+var nerdSchema = mongoose.Schema(
   {
   name: {type: String,default: ''}
   },
@@ -17,3 +16,4 @@ var nerdSchema = mongoose.schema(
 var Nerd = mongoose.model('Nerd',nerdSchema);
 
 module.exports = Nerd
+
